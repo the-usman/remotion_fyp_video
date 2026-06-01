@@ -9,3 +9,6 @@ import { enableTailwind } from '@remotion/tailwind-v4';
 Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
 Config.overrideWebpackConfig(enableTailwind);
+
+// Required for rendering from a Vercel-hosted Remotion Studio bundle.
+Config.setExperimentalClientSideRenderingEnabled(true);
